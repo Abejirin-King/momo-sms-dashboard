@@ -1,7 +1,7 @@
 # MoMo SMS Dashboard
 
 ## Team Name
-Group 9
+Group 3
 
 ## Project Description
 This project is an enterprise-level fullstack application designed to process MoMo SMS data in XML format. The system will parse, clean, and categorize transactions, store them in a relational database (SQLite), and provide a frontend dashboard for analysis and visualization.  
@@ -52,6 +52,10 @@ This project is an enterprise-level fullstack application designed to process Mo
     ├── test_parse_xml.py
     ├── test_clean_normalize.py
     └── test_categorize.py
+
+## 🏗️ System Architecture
+
+[View Our System Architecture](https://drive.google.com/file/d/1qUXtZGYu5cMayS05mjYsiglbUd0TFMkN/view?usp=sharing)
 
 ## Setup
 1. Clone this repo:  
