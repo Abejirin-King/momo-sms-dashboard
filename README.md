@@ -12,7 +12,7 @@ This project is an enterprise-level fullstack application designed to process Mo
 - Arnold MUGABO  
 
 ## Scrum Board
-[View our Scrum Board](https://trello.com/your-team-board-link)  
+[View our Scrum Board](https://github.com/users/Abejirin-King/projects/1)  
 
 ## Project Structure
     ```bash
