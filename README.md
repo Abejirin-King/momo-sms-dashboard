@@ -9,7 +9,8 @@ This project is an enterprise-level fullstack application designed to process Mo
 ## Team Members
 - King Abejirin  
 - Eloi Iradukunda  
-- Arnold MUGABO  
+- Arnold MUGABO
+- Mwizera Gisele  
 
 ## Scrum Board
 [View our Scrum Board](https://github.com/users/Abejirin-King/projects/1)  
