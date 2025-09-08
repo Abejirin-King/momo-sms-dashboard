@@ -8,7 +8,7 @@ This project is an enterprise-level fullstack application designed to process Mo
 
 ## Team Members
 - King Abejirin  
-- Eloi Iradukunda  
+- Teta Loice  
 - Arnold MUGABO
 - Mwizera Gisele  
 
