@@ -1,31 +1,21 @@
 import argparse
-import os
-import json
-
-def main(xml_path, out_path):
-   
-    print(f"Parsing XML from {xml_path}...")
-  
-    print("Cleaning and normalizing data...")
-    
-
-    print("Categorizing transactions...")
-   
-
-    print("Loading to database...")
-   
-    print(f"Saving processed data to {out_path}...")
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
-
-    with open(out_path, "w") as f:
-        json.dump({"message": "ETL pipeline placeholder"}, f, indent=4)
-
-    print("ETL pipeline completed successfully.")
+from parse_xml import parse_xml
+from clean_normalize import clean_data
+from categorize import categorize
+from load_db import load_to_db
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="MoMo ETL Pipeline")
-    parser.add_argument("--xml", required=True, help="Path to raw XML file")
-    parser.add_argument("--out", required=True, help="Path to output JSON file")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--xml", required=True, help="Path to XML file")
     args = parser.parse_args()
 
-    main(args.xml, args.out)
+    
+    records = parse_xml(args.xml)
+    
+    records = clean_data(records)
+    
+    records = categorize(records)
+  
+    load_to_db(records)
+
+    print("ETL pipeline completed successfully.")

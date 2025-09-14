@@ -1,0 +1,41 @@
+{
+  "user_example": {
+    "user_id": 1,
+    "name": "Alice",
+    "phone_number": "+250788111111"
+  },
+  "category_example": {
+    "category_id": 3,
+    "category_name": "Bill Payment",
+    "description": "Utility or service payment"
+  },
+  "transaction_example": {
+    "transaction_id": 101,
+    "amount": 5000,
+    "currency": "RWF",
+    "timestamp": "2025-09-13T14:35:00Z",
+    "status": "SUCCESS",
+    "sender": {
+      "user_id": 1,
+      "name": "Alice",
+      "phone_number": "+250788111111"
+    },
+    "receiver": {
+      "user_id": 2,
+      "name": "Bob",
+      "phone_number": "+250788222222"
+    },
+    "categories": [
+      {
+        "category_id": 5,
+        "category_name": "Transfer"
+      }
+    ]
+  },
+  "system_log_example": {
+    "log_id": 10,
+    "transaction_id": 101,
+    "log_message": "Transaction processed successfully",
+    "created_at": "2025-09-13T14:40:00Z"
+  }
+}
