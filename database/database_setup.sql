@@ -1,3 +1,4 @@
+#Database codes
 DROP DATABASE IF EXISTS momo_db;
 CREATE DATABASE momo_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE momo_db;
