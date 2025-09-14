@@ -1,6 +1,11 @@
 CREATE DATABASE IF NOT EXISTS momo_db;
 USE momo_db;
 
+DROP TABLE IF EXISTS transactions;
+DROP TABLE IF EXISTS transaction_categories;
+DROP TABLE IF EXISTS system_logs;
+DROP TABLE IF EXISTS users;
+
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
