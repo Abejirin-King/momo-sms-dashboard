@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactions>
+    <transaction>
+        <id>1</id>
+        <sender>0788123456</sender>
+        <receiver>0788765432</receiver>
+        <amount>5000</amount>
+        <currency>RWF</currency>
+        <timestamp>2025-09-13T14:35:00</timestamp>
+        <category>Deposit</category>
+    </transaction>
+    <transaction>
+        <id>2</id>
+        <sender>0788999888</sender>
+        <receiver>0788777666</receiver>
+        <amount>15000</amount>
+        <currency>RWF</currency>
+        <timestamp>2025-09-13T15:10:00</timestamp>
+        <category>Withdrawal</category>
+    </transaction>
+</transactions>
