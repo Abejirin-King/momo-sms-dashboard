@@ -1,41 +1,65 @@
 {
   "user_example": {
     "user_id": 1,
-    "name": "Alice",
-    "phone_number": "+250788111111"
+    "phone": "250780000001",
+    "name": "Alice N",
+    "created_at": "2025-09-01T08:00:00Z"
   },
+
   "category_example": {
-    "category_id": 3,
-    "category_name": "Bill Payment",
-    "description": "Utility or service payment"
+    "category_id": 2,
+    "code": "payment",
+    "label": "Payment",
+    "description": "Payment to merchant"
   },
+
   "transaction_example": {
-    "transaction_id": 101,
-    "amount": 5000,
+    "transaction_id": 1,
+    "external_id": "ext-0001",
+    "transaction_time": "2025-09-01T08:10:00Z",
+    "amount": 2000.00,
     "currency": "RWF",
-    "timestamp": "2025-09-13T14:35:00Z",
     "status": "SUCCESS",
     "sender": {
       "user_id": 1,
-      "name": "Alice",
-      "phone_number": "+250788111111"
+      "phone": "250780000001",
+      "name": "Alice N"
     },
     "receiver": {
-      "user_id": 2,
-      "name": "Bob",
-      "phone_number": "+250788222222"
+      "user_id": 5,
+      "phone": "250780000005",
+      "name": "Merchant X"
     },
+    "channel": "MoMo",
+    "narrative": "Payment to Merchant X",
     "categories": [
       {
-        "category_id": 5,
-        "category_name": "Transfer"
+        "category_id": 2,
+        "code": "payment",
+        "label": "Payment",
+        "confidence": 0.98
+      },
+      {
+        "category_id": 4,
+        "code": "fee",
+        "label": "Fee",
+        "confidence": 0.30
       }
-    ]
+    ],
+    "raw_xml": "<sms>...</sms>",
+    "created_at": "2025-09-01T08:12:00Z"
   },
+
   "system_log_example": {
-    "log_id": 10,
-    "transaction_id": 101,
-    "log_message": "Transaction processed successfully",
-    "created_at": "2025-09-13T14:40:00Z"
+    "log_id": 1,
+    "log_time": "2025-09-01T09:00:00Z",
+    "level": "INFO",
+    "component": "etl.parse_xml",
+    "message": "Parsed 5 transactions from momo.xml",
+    "transaction_id": null,
+    "meta": {
+      "file": "momo.xml",
+      "rows": 5
+    }
   }
 }

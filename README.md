@@ -18,40 +18,47 @@ This project is an enterprise-level fullstack application designed to process Mo
 ## Project Structure
     ```bash
     .
-    ├── README.md
-    ├── .env.example
-    ├── requirements.txt
+    ├── README.md  
+    ├── .env.example  
+    ├── requirements.txt  
     ├── index.html
-    ├── web/
-    │ ├── styles.css
-    │ ├── chart_handler.js
-    │ └── assets/
-    ├── data/
-    │ ├── raw/
-    │ ├── processed/
-    │ ├── db.sqlite3
-    │ └── logs/
-    ├── etl/
-    │ ├── init.py
-    │ ├── config.py
-    │ ├── parse_xml.py
-    │ ├── clean_normalize.py
-    │ ├── categorize.py
-    │ ├── load_db.py
-    │ └── run.py
-    ├── api/
-    │ ├── init.py
-    │ ├── app.py
-    │ ├── db.py
-    │ └── schemas.py
-    ├── scripts/
-    │ ├── run_etl.sh
-    │ ├── export_json.sh
-    │ └── serve_frontend.sh
-    └── tests/
-    ├── test_parse_xml.py
-    ├── test_clean_normalize.py
-    └── test_categorize.py
+    ├── web/  
+    │   ├── styles.css  
+    │   ├── chart_handler.js  
+    │   └── assets/  
+    ├── data/  
+    │   ├── raw/  
+    │   ├── processed/  
+    │   ├── db.sqlite3        
+    │   └── logs/  
+    ├── docs/  
+    │   ├── erd_diagram.png  
+    │   └── design_doc.pdf   
+    ├── database/  
+    │   └── database_setup.sql 
+    ├── examples/  
+    │   └── json_schemas.json 
+    ├── etl/  
+    │   ├── __init__.py  
+    │   ├── config.py  
+    │   ├── parse_xml.py  
+    │   ├── clean_normalize.py  
+    │   ├── categorize.py  
+    │   ├── load_db.py  
+    │   └── run.py  
+    ├── api/  
+    │   ├── __init__.py  
+    │   ├── app.py  
+    │   ├── db.py  
+    │   └── schemas.py  
+    ├── scripts/  
+    │   ├── run_etl.sh  
+    │   ├── export_json.sh  
+    │   └── serve_frontend.sh  
+    └── tests/  
+        ├── test_parse_xml.py  
+        ├── test_clean_normalize.py  
+        └── test_categorize.py
 
 ## 🏗️ System Architecture
 
