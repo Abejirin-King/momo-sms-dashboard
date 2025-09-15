@@ -65,7 +65,7 @@ This project is an enterprise-level fullstack application designed to process Mo
 
 [View Our System Architecture](https://drive.google.com/file/d/1qUXtZGYu5cMayS05mjYsiglbUd0TFMkN/view?usp=sharing)
 
-![ERD](docs/erd_diagram.png)
+![ERD](docs/ERD_diagram.pdf)
 
 ## Setup
 1. Clone this repo:  
