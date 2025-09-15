@@ -1,4 +1,5 @@
 # MoMo SMS Dashboard
+This project processes MoMo SMS transaction data (from XML), cleans and categorizes it, stores it in a relational database (MySQL), and provides both a JSON API (FastAPI) and a frontend dashboard for visualization.
 
 ## Team Name
 Group 3
@@ -60,7 +61,7 @@ This project is an enterprise-level fullstack application designed to process Mo
         ├── test_clean_normalize.py  
         └── test_categorize.py
 
-## 🏗️ System Architecture
+## System Architecture
 
 [View Our System Architecture](https://drive.google.com/file/d/1qUXtZGYu5cMayS05mjYsiglbUd0TFMkN/view?usp=sharing)
 
@@ -79,3 +80,48 @@ This project is an enterprise-level fullstack application designed to process Mo
 3. Install dependencies:
    ```bash
    pip install -r requirements.txt
+
+4. Create virtual Environment
+   ```bash
+   python -m venv venv
+   source/venv/bin/activate #On linux and mac
+   venv\Scripts\activate #On windows
+   
+5. Setup Database
+Make sure MySQL is installed and running.
+Create the database:
+   ```bash
+   CREATE DATABASE momo_db
+
+6. Load schema:
+   ```bash
+   mysql -u root -p momo_db < database/database_setup.sql
+
+7. Running the ETL Pipeline
+Parse XML → clean → load into DB:
+   ```bash
+   python etl/run.py --xml data/raw/momo.xml
+
+8. Running the API
+   ```bash
+   uvicorn api.app:app --reload
+
+
+Visit:
+http://127.0.0.1:8000
+ → API root
+http://127.0.0.1:8000/docs
+ → Swagger API docs
+
+## Example Endpoints
+
+- / → API health check
+- /users → List all users
+- /transactions → List transactions
+- /analytics/summary → Transaction summary (total deposits, withdrawals, etc.)
+
+
+
+
+
+
